@@ -1,11 +1,16 @@
-
+/* 
+ * Lecture 4
+ * 
+ * Bound and free variables in lambda expression
+ * 
+ * Date : 3rd September 2020
+ * Author : Adithya Selvaprithivraj
+ * */
 
 type lambdaExp = 
   | Var(string)
   | Lambda(string, lambdaExp)
   | App(lambdaExp, lambdaExp)
-
-
 
 
   let rec freeuhenv = (sym: string, exp: lambdaExp, env: list(string)): bool => {
