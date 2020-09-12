@@ -29,7 +29,6 @@ type lambdaExp =
     }
   }
 
-
   let rec bound = (sym: string, exp: lambdaExp): bool => {
     switch exp {
     | Var(s) => s != sym
